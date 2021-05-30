@@ -4,6 +4,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
+// If @Component is commented it means that LibraryEventsConsumerManualOffest is active.
 @Component
 public class LibraryEventsConsumer {
 
