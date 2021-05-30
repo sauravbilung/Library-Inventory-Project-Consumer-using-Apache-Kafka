@@ -26,7 +26,7 @@ public class LibraryEventsConsumerConfig {
             ConsumerFactory<Object, Object> kafkaConsumerFactory) {
                 ConcurrentKafkaListenerContainerFactory<Object, Object> factory = new ConcurrentKafkaListenerContainerFactory<>();
                 configurer.configure(factory, kafkaConsumerFactory);
-                factory.setConcurrency(3); // Point 2. Creating 3 threads of same with same instance of kakfa listener
+                factory.setConcurrency(3); // Point 2. Creating 3 threads with same instance of kakfa listener
                 //factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.MANUAL); // Point No.1
         return factory;
     }
